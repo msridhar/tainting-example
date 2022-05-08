@@ -10,7 +10,7 @@ plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
     // Checker Framework pluggable type-checking
-    id 'org.checkerframework' version '0.5.1'
+    id 'org.checkerframework' version '0.6.11'
 }
 
 apply plugin: 'org.checkerframework'
@@ -18,13 +18,14 @@ apply plugin: 'org.checkerframework'
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
-    jcenter()
+    mavenCentral()
+    mavenLocal()
 }
 
 checkerFramework {
     checkers = [
             'org.checkerframework.checker.tainting.TaintingChecker',
-            'org.checkerframework.checker.optional.OptionalChecker'
+            //'org.checkerframework.checker.tainting.TaintingChecker'
     ]
 }
 dependencies {
@@ -36,4 +37,8 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
+
+//    compileOnly 'org.checkerframework:checker-qual:3.22.1-SNAPSHOT'
+//    testCompileOnly 'org.checkerframework:checker-qual:3.22.1-SNAPSHOT'
+//    checkerFramework 'org.checkerframework:checker:3.22.1-SNAPSHOT'
 }
