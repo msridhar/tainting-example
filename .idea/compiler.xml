@@ -5,7 +5,9 @@
       <profile name="Gradle Imported" enabled="true">
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
-          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker/3.4.0/7705536c028fa6ab8ad971720f98189570c26cf9/checker-3.4.0.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker/3.22.0/2a1de7fd0ac6fb251c4e0dfac83cf25238773fce/checker-3.22.0.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-util/3.22.0/41c09635417df747307b4e44afa81c80ee5291e5/checker-util-3.22.0.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.22.0/8e37f79d2cfe45a670e13f728b5e536ba65ac3ef/checker-qual-3.22.0.jar" />
           <entry name="$PROJECT_DIR$/build/checkerframework" />
         </processorPath>
         <module name="tainting.test" />

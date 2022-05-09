@@ -38,7 +38,7 @@ dependencies {
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
 
-//    compileOnly 'org.checkerframework:checker-qual:3.22.1-SNAPSHOT'
-//    testCompileOnly 'org.checkerframework:checker-qual:3.22.1-SNAPSHOT'
-//    checkerFramework 'org.checkerframework:checker:3.22.1-SNAPSHOT'
+    compileOnly 'org.checkerframework:checker-qual:3.22.1-SNAPSHOT'
+    testCompileOnly 'org.checkerframework:checker-qual:3.22.1-SNAPSHOT'
+    checkerFramework 'org.checkerframework:checker:3.22.1-SNAPSHOT'
 }

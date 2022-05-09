@@ -21,17 +21,17 @@ public class TaintExample {
 
   void execute(@Untainted String s) {}
 
-  void stringRef(@Untainted String ref) {
-    execute(ref.substring(3, 5)); // error
-  }
+//  void stringRef(@Untainted String ref) {
+//    execute(ref.substring(3, 5)); // error
+//  }
 
   void testRCE(@Tainted String s) throws IOException {
     Runtime.getRuntime().exec(s);
-    ProcessBuilder p = new ProcessBuilder(s);
-    p = new ProcessBuilder(Arrays.asList(s));
-    List<@Untainted String> l = new ArrayList<>();
-    l.add(s);
-    p = new ProcessBuilder(l);
+//    ProcessBuilder p = new ProcessBuilder(s);
+//    p = new ProcessBuilder(Arrays.asList(s));
+//    List<@Untainted String> l = new ArrayList<>();
+//    l.add(s);
+//    p = new ProcessBuilder(l);
   }
 //
 //  @PolyTainted String id(@PolyTainted String input) {
@@ -48,10 +48,10 @@ public class TaintExample {
 //    l.add(ref);
 //  }
 
-  void useOptional() {
-    Optional<String> opt = Optional.empty();
-    if (opt.isPresent()) {
-      opt.get();
-    }
-  }
+//  void useOptional() {
+//    Optional<String> opt = Optional.empty();
+//    if (opt.isPresent()) {
+//      opt.get();
+//    }
+//  }
 }
