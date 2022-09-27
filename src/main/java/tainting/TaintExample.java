@@ -32,6 +32,7 @@ public class TaintExample {
     List<@Untainted String> l = new ArrayList<>();
     l.add(s);
     p = new ProcessBuilder(l);
+    ClassForStub.testMethod(s);
   }
 //
 //  @PolyTainted String id(@PolyTainted String input) {

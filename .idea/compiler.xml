@@ -4,14 +4,17 @@
     <annotationProcessing>
       <profile name="Gradle Imported" enabled="true">
         <outputRelativeToContentRoot value="true" />
+        <option name="stubs" value="$PROJECT_DIR$/stubs" />
         <processorPath useClasspath="false">
-          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker/3.4.0/7705536c028fa6ab8ad971720f98189570c26cf9/checker-3.4.0.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker/3.25.0/2ff7f89e0b294f5fde607beae5c4705783d0876e/checker-3.25.0.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-util/3.25.0/c825543347e9917999ce0c78de99a899a26796b1/checker-util-3.25.0.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.25.0/6a241eb88b3c28cf9d77a37fed9e639b41716ad7/checker-qual-3.25.0.jar" />
           <entry name="$PROJECT_DIR$/build/checkerframework" />
         </processorPath>
         <module name="tainting.test" />
         <module name="tainting.main" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.8" />
+    <bytecodeTargetLevel target="11" />
   </component>
 </project>

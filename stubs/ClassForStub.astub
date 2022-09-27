@@ -1,0 +1,9 @@
+package tainting;
+
+import org.checkerframework.checker.tainting.qual.Untainted;
+
+public class ClassForStub {
+  public static void testMethod(@Untainted String s) {
+    System.out.println(s);
+  }
+}
