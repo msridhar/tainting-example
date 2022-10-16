@@ -10,7 +10,7 @@ plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
     // Checker Framework pluggable type-checking
-    id 'org.checkerframework' version '0.6.16'
+    id 'org.checkerframework' version '0.6.17'
 }
 
 apply plugin: 'org.checkerframework'
@@ -32,9 +32,9 @@ checkerFramework {
 }
 dependencies {
     // Use JUnit test framework
-    testImplementation 'junit:junit:4.12'
-    compileOnly 'org.checkerframework:checker-qual:3.25.0'
-    testCompileOnly 'org.checkerframework:checker-qual:3.25.0'
-    checkerFramework 'org.checkerframework:checker:3.25.0'
+    testImplementation 'junit:junit:4.13.2'
+    compileOnly 'org.checkerframework:checker-qual:3.26.0'
+    testCompileOnly 'org.checkerframework:checker-qual:3.26.0'
+    checkerFramework 'org.checkerframework:checker:3.26.0'
 
 }
