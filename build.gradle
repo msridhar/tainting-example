@@ -12,10 +12,14 @@ plugins {
     // Lombok
     id "io.freefair.lombok" version "6.5.1"
     // Checker Framework pluggable type-checking
-    id 'org.checkerframework' version '0.6.17'
+    id 'org.checkerframework' version '0.6.18'
 }
 
 apply plugin: 'org.checkerframework'
+
+//lombok {
+//    version = "1.18.24"
+//}
 
 repositories {
     // Use jcenter for resolving dependencies.
@@ -26,7 +30,8 @@ repositories {
 
 checkerFramework {
     checkers = [
-            'org.checkerframework.checker.tainting.TaintingChecker',
+            //'org.checkerframework.checker.tainting.TaintingChecker',
+            'org.checkerframework.checker.calledmethods.CalledMethodsChecker',
     ]
     extraJavacArgs = [
             '-Astubs=' + projectDir + '/stubs'

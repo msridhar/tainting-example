@@ -3,6 +3,7 @@
  */
 package tainting;
 
+import calledmethods.TestC;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -10,5 +11,10 @@ public class LibraryTest {
     @Test public void testSomeLibraryMethod() {
         TaintExample classUnderTest = new TaintExample();
         assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
+    }
+
+    @Test
+    public void testCrash() {
+        System.out.println(TestC.builder().build());
     }
 }
