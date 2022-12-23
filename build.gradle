@@ -10,7 +10,7 @@ plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
     // Lombok
-    id "io.freefair.lombok" version "6.5.1"
+    id "io.freefair.lombok" version "6.6.1"
     // Checker Framework pluggable type-checking
     id 'org.checkerframework' version '0.6.18'
 }
